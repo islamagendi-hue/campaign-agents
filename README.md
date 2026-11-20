@@ -10,6 +10,21 @@ A Claude plugin that turns one campaign brief into a full launch plan: paid camp
 - Never touches budgets beyond the brief, billing or payment methods.
 - Missing inputs are marked `MISSING`, never guessed.
 
+## What it can build today
+
+| Platform | With its official connector | Without it |
+|---|---|---|
+| Meta (Facebook, Instagram) | Builds campaigns, paused (Meta Ads MCP, open beta) | Build sheet |
+| TikTok | Builds campaigns, paused (TikTok for Business connector) | Build sheet |
+| Snapchat | Reads data only (Snap's connector is read-only for now) | Build sheet |
+| Google Ads | Reads data only (Google's MCP is read-only) | Google Ads Editor import sheet |
+| X, LinkedIn | — | Build sheet |
+| MoEngage | Builds campaigns and segments as drafts | Journey sheet |
+| CleverTap | Campaigns and segments via its MCP | Journey sheet |
+| WebEngage | — | Journey sheet |
+
+No connectors at all? It still runs the full plan in manual mode and hands you the sheets.
+
 ## Install
 
 In Claude Code:
@@ -19,7 +34,7 @@ In Claude Code:
 /plugin install campaign-agents@campaign-agents
 ```
 
-In the Claude app, add this repo as a plugin marketplace from the plugins settings, then install **campaign-agents**.
+In the Claude app (chat or Cowork): open the Plugins settings, add a marketplace from a GitHub repository, enter `islamagendi-hue/campaign-agents`, then install **campaign-agents**.
 
 ## Use
 
