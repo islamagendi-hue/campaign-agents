@@ -124,7 +124,7 @@ Example: `Nura_META_SA_SALES_TOF_LAL1_2611` → ad `Nura_META_SA_..._VID9x16_Pai
 
 ## Step 6: Present the plan (before any write)
 
-In order: business-model lens and the event optimized; CRO gate score with top fixes; one table per platform (campaign, ad set, audience, geo, budget, event, ads, copy variants, CTA, URL); CRM journeys; budget totals by platform; KPIs and guardrails from the Step 2 row; open risks (tracking gaps, policy-risk claims, missing creatives, page fixes); what will be built paused. End with: "اكتب «موافق» عشان أبنيها كلها متوقفة."
+In order: business-model lens and the event optimized; CRO gate score with top fixes; one table per platform (campaign, ad set, audience, geo, budget, event, ads, copy variants, CTA, URL); CRM journeys; budget totals by platform; KPIs and guardrails from the Step 2 row; open risks (tracking gaps, policy-risk claims, missing creatives, page fixes); what will be built paused. End by asking the user to reply "approved" (in their language, e.g. «موافق») to build everything paused.
 
 For plans to share or keep, deliver a Sheets artifact: one tab per platform, plus CRO, CRM, UTMs and QA tabs.
 
