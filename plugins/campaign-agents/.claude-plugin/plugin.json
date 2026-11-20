@@ -1,0 +1,10 @@
+{
+  "name": "campaign-agents",
+  "version": "0.1.0",
+  "description": "Plan, CRO-check, build (paused) and QA multichannel campaigns on Meta, Snapchat, TikTok, Google Ads and X, plus CRM journeys in MoEngage, WebEngage and CleverTap.",
+  "author": { "name": "Islam Gendi", "url": "https://github.com/islamagendi-hue" },
+  "homepage": "https://github.com/islamagendi-hue/campaign-agents",
+  "repository": "https://github.com/islamagendi-hue/campaign-agents",
+  "license": "MIT",
+  "keywords": ["marketing", "paid-media", "meta-ads", "tiktok-ads", "snapchat-ads", "google-ads", "crm", "moengage", "clevertap", "webengage", "campaigns"]
+}
