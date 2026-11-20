@@ -28,12 +28,12 @@ List what's connected (ListConnectors / available tools). For each requested pla
 | Platform | Official connector | Build? | Notes / without it |
 |---|---|---|---|
 | Meta (FB/IG) | Meta Ads AI connector, custom connector URL `https://mcp.facebook.com/ads` | Yes, paused by default | Open beta, may not be enabled for every account. Else manual build sheet |
-| TikTok | TikTok for Business hosted Ads MCP | Yes | Large tool set, rate/concurrency limits: pause between bulk edits |
-| Snapchat | Snap-hosted Ads MCP | Yes | Human-in-the-loop by design |
+| TikTok | TikTok for Business connector (listed in Claude's connector directory) | Yes | Large tool set, rate/concurrency limits: pause between bulk edits |
+| Snapchat | Snap-hosted Ads MCP, `https://mcp.snapchat.com/ads` | Read-only (current release) | Rolling out on an allowlist. Build = manual build sheet |
 | Google Ads | Google's open-source Ads MCP | Read-only | Build = Google Ads Editor import sheet for the user to upload |
 | X | Check connector settings | Verify | No write connector → manual build sheet |
 | LinkedIn (B2B add-on) | Check | Verify | Manual build sheet |
-| MoEngage | `https://mcp.moengage.com` (OAuth) | Campaign APIs | Strict rate limits: don't fan out calls |
+| MoEngage | `https://mcp.moengage.com` (OAuth, data centers DC01–DC04) | Campaigns, segments | Strict rate limits: don't fan out calls |
 | CleverTap | Official CleverTap MCP (see CleverTap docs for URL) | Campaigns, segments | |
 | WebEngage | None known | No | Browser (Claude in Chrome, draft only) or journey sheet |
 
@@ -124,14 +124,14 @@ Example: `Nura_META_SA_SALES_TOF_LAL1_2611` → ad `Nura_META_SA_..._VID9x16_Pai
 
 ## Step 6: Present the plan (before any write)
 
-In order: business-model lens and the event optimized; CRO gate score with top fixes; one table per platform (campaign, ad set, audience, geo, budget, event, ads, copy variants, CTA, URL); CRM journeys; budget totals by platform; KPIs and guardrails from the Step 2 row; open risks (tracking gaps, policy-risk claims, missing creatives, page fixes); what will be built paused. End by asking the user to reply "approved" (in their language, e.g. «موافق») to build everything paused.
+Tag every decision in the plan with the agent that owns it (e.g. `[Budget]`, `[Audience]`, `[CRO gate]`), so a wrong call can be traced to one agent. In order: business-model lens and the event optimized; CRO gate score with top fixes; one table per platform (campaign, ad set, audience, geo, budget, event, ads, copy variants, CTA, URL); CRM journeys; budget totals by platform; KPIs and guardrails from the Step 2 row; open risks (tracking gaps, policy-risk claims, missing creatives, page fixes); what will be built paused. End by asking the user to reply "approved" (in their language, e.g. «موافق») to build everything paused.
 
 For plans to share or keep, deliver a Sheets artifact: one tab per platform, plus CRO, CRM, UTMs and QA tabs.
 
 ## Step 7: Build (only after approval)
 
 - Platform by platform, PAUSED / DRAFT, through the official connector.
-- Read-only or unconnected platforms (Google, possibly X, WebEngage): deliver the import/build sheet instead and say so.
+- Read-only or unconnected platforms (Google, Snapchat, possibly X, WebEngage): deliver the import/build sheet instead and say so.
 - After each platform: what was created with IDs, and anything that failed with the error.
 - Never edit the landing page itself; CRO fixes go to the user as a list.
 
