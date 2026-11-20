@@ -1,0 +1,14 @@
+{
+  "name": "campaign-agents",
+  "owner": { "name": "Islam Gendi", "url": "https://github.com/islamagendi-hue" },
+  "metadata": { "description": "Multichannel ad and CRM campaign agents for Claude.", "version": "0.1.0" },
+  "plugins": [
+    {
+      "name": "campaign-agents",
+      "source": "./plugins/campaign-agents",
+      "description": "Plan, CRO-check, build (paused) and QA campaigns on Meta, Snap, TikTok, Google and X plus CRM journeys (MoEngage, WebEngage, CleverTap).",
+      "version": "0.1.0",
+      "category": "marketing"
+    }
+  ]
+}
