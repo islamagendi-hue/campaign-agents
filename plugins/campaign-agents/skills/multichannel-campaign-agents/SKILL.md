@@ -159,6 +159,4 @@ Pull like-for-like windows (last 7/14/30 days vs. the prior equal period) per pl
 
 Separate facts from hypotheses; mark unavailable data MISSING. Compare against the account's own baseline, not generic benchmarks. Before moving budget between platforms, check incrementality rather than trusting platform-reported ROAS.
 
-## Related skills
-
-Load only when a step needs depth: `growth-os:ads` (channel judgement), `growth-os:ad-creative` (hooks and variants), `anthropic-skills:cro-methodology` and `anthropic-skills:cxl-conversion-research` (deeper page research), `growth-os:copywriting` (page rewrites), `growth-os:signup` / `growth-os:onboarding` / `growth-os:paywalls` (SaaS and apps), `growth-os:revops` (B2B lead stages), `growth-os:conversion-tracking` (pixel/CAPI fixes), `growth-os:emails` / `growth-os:sms` (CRM copy depth), `anthropic-skills:utm-builder`, `anthropic-skills:ab-test-design-analysis`, `anthropic-skills:incrementality-attribution`.
+If other marketing skills are installed (ads, ad creative, CRO, copywriting, conversion tracking, UTMs, A/B testing, incrementality), load them only when a step needs more depth.
